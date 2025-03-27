@@ -1,0 +1,50 @@
+/* Custom styles for SunEditor */
+.sun-editor {
+    border: none !important;
+    border-radius: 0 !important;
+  }
+  
+  .sun-editor .se-toolbar {
+    outline: none !important;
+    border-bottom: 1px solid #eee !important;
+    background-color: #f9f9fb !important;
+    border-radius: 10px 10px 0 0 !important;
+  }
+  
+  .sun-editor .se-btn-tray {
+    background-color: transparent !important;
+  }
+  
+  .sun-editor .se-wrapper {
+    border: none !important;
+  }
+  
+  .sun-editor .se-wrapper .se-wrapper-inner {
+    background-color: #fff !important;
+  }
+  
+  .sun-editor .se-resizing-bar {
+    background-color: #f9f9fb !important;
+    border-top: 1px solid #eee !important;
+    border-radius: 0 0 10px 10px !important;
+  }
+  
+  /* Animation for the editor */
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  .editor-container {
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
+  /* Button hover styles */
+  .action-btn:hover:not(:disabled) {
+    transform: scale(1.05);
+  }
+  
+  .action-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
